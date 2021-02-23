@@ -1,0 +1,725 @@
+body {
+  font-family: 'Cabin', sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+/*--Rover Header style start--*/
+
+
+/*drop downmenu for mobile start*/
+/* Dropdowns for the nav bar */
+.nav-bar .dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+/* Headings for each dropdown */
+.nav-bar .dropdown button,
+.nav-bar a {
+  color:#14a96d;
+  font-size: 15px;
+  padding: 10px 15px 10px 15px;
+  outline: none !important;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-bar .dropdown button {
+}
+
+.nav-bar .dropdown button:hover,
+.nav-bar a:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+/* Container for content inside the dropdown */
+.nav-bar .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  right:1px;
+  border-top: 0px;
+  width: 200px;
+}
+
+/* Sections in the dropdowns */
+.nav-bar .dropdown .dropdown-content .dc-section {
+  width: 200px;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid ;
+  border-color: #14a96d;
+  float: left;
+}
+
+
+/* Options in each dropdown */
+.nav-bar .dropdown .dropdown-content .dc-section a {
+  display: block;
+  color: lightgrey;
+  margin: 0px;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #14a96d;
+}
+
+.nav-bar .dropdown .dropdown-content .dc-section a:hover {
+  background-color: transparent;
+  color: #1b1f23;
+}
+
+/* Show dropdown when heading is hovered */
+.nav-bar .dropdown:hover .dropdown-content {
+  display: block;
+}
+/*dropdown menu for mobile ends*/
+
+.rover-header-container {
+  display:flex;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 30px;
+
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  visibility: visible;
+  display: flex;
+
+}
+
+.rover-header-left ,.rover-header-right {
+  visibility: hidden;
+  display: none;
+}
+
+/* big screen mode */
+@media (min-width:768px){
+.nav-bar {
+  visibility: hidden;
+  display: none;
+}
+
+.rover-header-container {
+  display:flex;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 40px;
+}
+ .rover-header-right  {
+  display: flex;
+  visibility: visible;
+  align-items: center;
+  font-size: 20px;
+  padding: 15px;
+
+}
+
+.leftside {
+  display: flex;
+  align-items: center;
+
+}
+
+.rover-header-left {
+  display: flex;
+  visibility: visible;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.logo {
+  display: flex;
+  visibility: visible;
+}
+
+}
+a {
+  text-decoration: none;
+  color:#66727c;
+  font-size: 14px;
+  padding-left:5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+a:hover {
+ color:#1b1f23;
+}
+/*--Rover Header style end--*/
+
+
+/*--____Rover hero start___--*/
+
+.rover-hero-container {
+  display:flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  font-size:20px;
+
+}
+.rover-cta-mobile {
+  background-color:#14a96d;
+  color:#fff;
+  width: 98%;
+  text-align: center;
+  border-radius: 7px;
+  padding: 8px;
+  cursor: pointer;
+  border:0;
+
+}
+.rover-cta-mobile:hover{
+background-color: #0E7F51;
+}
+.rover-hero-container h1,.rover-hero-container .rover-cta{
+  visibility: hidden;
+  display: none;
+
+}
+
+/* big screen mode */
+@media (min-width:768px){
+  .rover-cta-mobile{
+    visibility:hidden;
+    display:none;
+  }
+  .rover-hero-container h1,.rover-cta{
+    visibility:visible;
+    display:flex;
+
+  }
+  .rover-hero-container {
+    background:url('https://i.ibb.co/f1mfKLc/hero.jpg');
+   height: 400px;
+   display: flex;
+   background-position:top;
+   justify-content: center;
+   align-items:flex-start;
+   flex-direction: column;
+   background-size:cover;
+   padding: 15px;
+   color: #66727c;
+  }
+
+  .rover-hero-container .rover-cta {
+    visibility:visible;
+    display:flex;
+    background-color:#14a96d;
+    color:#fff;
+    padding: 10px;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: center;
+    border-radius: 7px;
+    margin-left: 50px;
+    cursor: pointer;
+    border:0;
+    }
+
+.rover-hero-container .rover-cta:hover{
+    background-color: #0E7F51;
+}
+
+  .rover-hero-container p{
+    width: 350px;
+    margin-left: 50px;
+  }
+
+  .rover-hero-container h1 {
+    margin-left: 50px;
+  }
+}
+
+/*--____under header end____--*/
+
+/*--____middle start___--*/
+
+.rover-middle-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.rover-mobile-hero-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.rover-mobile-hero {
+  padding: 10px;
+  width: 45%;
+}
+
+@media (min-width:768px){
+  .rover-mobile-hero {
+    visibility:hidden;
+    display:none;
+  }
+}
+
+/*--____middle end___--*/
+
+/*--____fact start___--*/
+/*--____left start___--*/
+
+
+
+.rover-fact-indiv img {
+  float: left;
+  width: 60px;
+  margin-right: 10px;
+}
+
+
+.rover-fact-indiv p {
+  display: flex;
+  align-self: flex-start;
+  margin-top: -7px;
+  color: #66727c;
+
+}
+
+.rover-fact-indiv h3{
+  display: flex;
+  align-self: flex-start;
+}
+/*--____left end___--*/
+
+/*--____right start___--*/
+.rover-cta-box {
+   border: 1px solid #cfd7de;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.rover-cta-header {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   border-bottom: 1px solid #cfd7de;
+   padding-top: 10px;
+   background-color: #f4f5f6;
+
+
+}
+.rover-cta-header img{
+ width: 25px;
+ height: 35px;
+ padding-right: 10px;
+
+}
+
+.rover-cta-header p{
+  margin-top: 7px;
+}
+.bold {
+  font-weight: bolder;
+}
+.rover-facts {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 95%;
+}
+.rover-facts li {
+  padding: 10px;
+}
+.checkmark {
+  font-weight: 800px;
+  color:#14a96d;
+}
+
+.rover-cta-box .rover-cta {
+  background-color:#14a96d;
+  color:#fff;
+  text-align: center;
+  width: 90%;
+  border-radius: 7px;
+  padding: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border:0;
+}
+
+.rover-cta-box .rover-cta:hover{
+background-color: #0E7F51;
+}
+.rover-protections {
+  font-size: 14px;
+}
+
+.rover-protections a{
+  color: #06748a;
+}
+.rover-protections a:hover{
+  color: #033641;
+}
+
+/*big screen*/
+@media (min-width:768px){
+  .rover-facts-container {
+  float: left;
+  width: 40%;
+  overflow: hidden;
+  margin-left: 30px;
+  }
+  .rover-cta-box {
+  float: right;
+  width: 50%;
+  margin-left: 10px;
+  margin-right: 30px;
+  }
+
+.rover-protections {
+  display: block;
+  float: right;
+  width: 50%;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+.rover-cta-box .rover-cta {
+  justify-content: center;
+
+}
+
+}
+/*--____right start___--*/
+/*--____fact end___--*/
+
+/*___Rover action start___*/
+.rover-action-quote-container {
+  position: relative;
+  border-top: 1px solid #cfd7de;
+  border-right: 1px solid #cfd7de;
+  border-left: 1px solid #cfd7de;
+  margin-left: -9px;
+  margin-right: -9px;
+  padding: 15px;
+  top: -300px;
+}
+
+.rover-action-quote-container .rover-quote{
+  color: #000;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.rover-action-quote-container span {
+  display: block;
+  font-weight: normal;
+  margin-top: 15px;
+
+}
+
+.rover-action-quote-container span::first-letter {
+
+  display: none;
+  visibility: hidden;
+  margin-left: -15px;
+
+}
+
+.rover-action-quote-container p {
+  color:#66727c;
+}
+
+.rover-action-quote-container a {
+  color: #06748a;
+}
+
+.rover-action-quote-container a:hover {
+  color: #033641;
+
+}
+
+.rover-action-dash {
+  font-weight: 900px;
+  color:#14a96d;
+}
+.rover-action-shot {
+  background: url('https://www.rover.com/static/dist/a16f802b037458af3bbab4db5bd3f93e.jpg') center;
+  background-size: 550px 450px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  position:relative;
+  top:207px;
+  height: 300px;
+  margin-left: -9px;
+  margin-right: -9px;
+
+}
+
+.onTop {
+  display: flex;
+  position:absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color: #fff;
+  width: 203px;
+  font-size: 14px;
+  padding:3px;
+  text-transform:uppercase;
+  top: 270px;
+  left:150px;  }
+
+/*big screen*/
+@media (min-width:768px){
+
+  .rover-action-quote-container {
+    position: relative;
+    border: 1px solid #cfd7de;
+    margin-left: -9px;
+    margin-right: -9px;
+    padding: 25px;
+    top: -270px;
+    left: 150px;
+    width:300px;
+    background-color: #fff;
+  }
+
+  .onTop {
+    display: flex;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    width: 203px;
+    font-size: 14px;
+    padding:3px;
+    text-transform:uppercase;
+    top: 400px;
+    left:490px;}
+
+  .rover-action-shot {
+    position:relative;
+    width:100%;
+    margin-top: -100px;
+    background: url('https://www.rover.com/static/dist/a16f802b037458af3bbab4db5bd3f93e.jpg') center;
+    background-position:cover;
+    background-size: 90% 90%;
+    background-repeat: no-repeat;
+    top:207px;
+    height: 450px;
+    margin-left: -9px;
+    margin-right: -9px;
+
+
+  }
+  .rover-action-quote-container span::first-letter {
+
+    display:flex;
+    visibility: visible;
+  }
+
+  .rover-action-quote-container span {
+    display:inline;
+    font-weight: bold;
+    color:#66727c;
+
+  }
+}
+
+
+/*-----Rover 1-2-3 start----------*/
+.rover-123-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rover-123-container h2 {
+  margin-bottom: 30px;
+}
+
+.rover-123-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: flex-start;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.rover-123-item-container img {
+  float: left;
+  align-items:
+  width: 70px;
+  height:80px;
+  padding-right: 20px;
+}
+
+.rover-123-item h3{
+  margin-top: -10px;
+
+}
+.rover-123-item p {
+  margin-bottom: 50px;
+}
+
+#shield {
+  padding-right: 31px;
+}
+
+/*---big screen---*/
+@media (min-width:768px){
+
+  .rover-123-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rover-123-item-container {
+    display: grid;
+  	grid-gap: 20px;
+  	grid-template-columns: 1fr 1fr 1fr;
+  	margin-left: 10px;
+  	margin-right: 10px;
+    padding:40px;
+    text-align: center;
+
+  }
+  .rover-123-item-container img {
+    float: none;
+    padding-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .rover-123-item {
+    margin: 20px;
+  }
+  .rover-123-item h3{
+    margin-top: 0px;
+
+  }
+  .rover-123-item p {
+    margin-bottom: 10px;
+  }
+
+  #shield {
+    padding-right: 0px;
+  }
+
+}
+
+
+/*-----Rover 1-2-3 end----------*/
+
+/*----------------------------*/
+/*------------sign up form start----------------*/
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 96%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.modal button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.modal button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px ;
+  background-color: #f44336 !important;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left !important;
+  width: 50% !important;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px !important;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
